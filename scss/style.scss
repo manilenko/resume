@@ -1,0 +1,159 @@
+@import '_common';
+@import '_resume';
+@import '_projects';
+@import '_contact';
+
+
+body {
+   background: rgba(217, 217, 217, 0.13);
+   font-family: 'Nanum Gothic Coding', monospace;
+   font-weight: 400;
+   & .lock{
+      overflow: hidden;
+   }
+} 
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+[class*="__container"]{
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 15px;
+
+}
+@import '_header';
+
+.main {
+   flex: 1 1 auto;
+}
+/* ---------- about-me container-------------- */
+.about-me {
+   padding: 138px 0 138px;
+   @media (max-width: 992px) {
+    padding: 60px 0 60px;
+   }
+   @media (max-width: 767.98px) {
+    padding: 40px 0 40px;
+   }
+   @media (max-width: 450px) {
+    padding: 15px 0 15px;
+   }
+ }
+ .about-me__container {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   @media (max-width: 767.98px) {
+    flex-direction: column-reverse;
+    gap: 20px;
+   }
+ }
+ .about-me__photo {
+  max-width: 500px;
+  align-self: center;
+  
+    img{
+      width: 100%;
+      border-radius: 50%;
+   }
+   
+ }
+ .about-me__body {
+   flex: 0 1 40%;
+ }
+ .about-me__title {
+   font-family: $fontFamily;
+   font-weight: $fontWeight;
+   @include adaptiv-font(100, 40);
+   line-height: 1.4em;
+   @media (max-width: 767.98px) {
+    text-align: center;
+   }
+ }
+ .about-me__subtitle {
+   @include adaptiv-font(22, 20);
+   font-family: $fontFamily;
+   font-weight: $fontWeight;
+   line-height: 1.3em;
+   padding-left: 8px;
+   padding-bottom: 10px;
+   @media (max-width: 767.98px) {
+    text-align: center;
+   }
+ }
+ .about-me__text {
+   line-height: 1.6em;
+   padding-left: 8px;
+   padding-bottom: 20px;
+   &.active{
+    display: none;
+   }
+ }
+ .circle{
+  padding-left: 20px;
+  position: relative;
+ }
+ .circle::before{
+  content: '';
+  width: 9px;
+  height: 9px;
+  left: 0;
+  top: 7px;
+  border: 1px solid rgb(12, 12, 12);
+  border-radius: 50%;
+  background-color: rgb(93, 174, 250);
+  position: absolute;
+  
+ }
+ .about-me__buttons {
+   display: flex;
+   justify-content: space-around;
+   gap: 15px;
+   text-align: center;
+   @media (max-width: 767.98px) {
+    justify-content: center;
+   }
+ }
+ .about-me__button {
+   width: 150px;
+   height: 150px;
+   font-size: 22px;
+   font-family: $fontFamily;
+   font-weight: $fontWeight;
+   color: #000;
+   padding: 59px 0 0;
+   transition: all 0.3s ease 0s;
+   border-radius: 50%;
+   border: 1px solid rgb(12, 12, 12);
+   transition: all 2s;
+   &:hover{
+      background-color: rgba(217, 217, 217, 0.13);
+      transform: scale(1.1);
+   }
+   @media (max-width: 507px) {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    padding: 35px 0 0;
+   }
+   @media (max-width: 320px) {
+    width: 100px;
+    height: 90px;
+    padding: 32px 0 0;
+	}
+   
+ }
+ .button-1 {
+   background-color: rgb(239, 250, 93);
+   
+ }
+ .button-2 {
+   background-color: rgb(93, 174, 250);
+ }
+ .button-3 {
+   background-color: rgb(209, 91, 238);
+ }
+@import '_footer';

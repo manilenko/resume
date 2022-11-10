@@ -1,0 +1,19 @@
+bc: #f3f3f3
+
+font-style:
+Raleway
+font-family: 'Lato', sans-serif; 700 - for title
+
+for text 
+font-size: 16px;
+   line-height: 30px;
+color: #848789;
+
+
+
+burger text
+    color: #4d4959;
+    //font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;

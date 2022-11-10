@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>JM Dev</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__body">
+               <div class="header__logo logo">
+                  <a href="index.html" class="logo__link">
+                     <!-- <div class="logo__icon"></div> -->
+                     <div class="logo__img"><img src="img/icon-logo.png" alt=""></div>
+                     <div class="logo__body">
+                        <div class="logo__name">Julia Manilenko</div>
+                        <div class="logo__job">Front End Developer</div>
+                     </div>
+                  </a>
+               </div>
+               <nav class="header__menu menu">
+                  <ul class="menu__list">
+                     <li class="menu__item"><a href="resume.html" class="menu__link">Resume</a></li>
+                     <li class="menu__item"><a href="projects.html" class="menu__link">Projects</a></li>
+                     <li class="menu__item"><a href="contact.html" class="menu__link link-active">Contact</a></li>
+                  </ul>
+               </nav>
+               <div class="header__burger">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="contact-block block">
+            <div class="contact-block__container">
+               <div class="contact-block__column">
+                  <div class="contact-block__title common-title">Contact <p><span>Looking forward to hearing from
+                           you</span></p>
+                  </div>
+                  <div class="body-contact__items">
+                     <div class="body-contact__item">
+                        <div class="body-contact__title">Phone</div>
+                        <a href="tel:+19807584546" class="tel-contact">+1 (980)-758-45-46</a>
+                     </div>
+                     <div class="body-contact__item">
+                        <div class="body-contact__title">Email</div>
+                        <a href="mailto:manilenko.developer@gmail.com" class="email">manilenko.developer@gmail.com</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="contact-block__body body-contact">
+
+
+                  <div class="body-contact__form form">
+                     <form action="#" id="form" class="form__body">
+                        <div class="form__row">
+                           <div class="form__item">
+                              <label for="formFirstName" class="form__label">First Name</label>
+                              <input id="formFirstName" type="text" name="name" class="form__input">
+                           </div>
+                           <div class="form__item">
+                              <label for="formLastName" class="form__label">Last Name</label>
+                              <input id="formLastName" type="text" name="name" class="form__input">
+                           </div>
+                        </div>
+                        <div class="form__row">
+                           <div class="form__item">
+                              <label for="formEmail" class="form__label">Email *</label>
+                              <input id="formEmail" type="text" name="email" class="form__input __req __email">
+                           </div>
+                           <div class="form__item">
+                              <label for="formSub" class="form__label">Subject</label>
+                              <input id="formSub" type="text" name="email" class="form__input">
+                           </div>
+                        </div>
+
+                        <div class="form__item">
+                           <label for="formMessage" class="form__label">Message</label>
+                           <textarea name="message" id="formMessage" class="form__input"></textarea>
+                        </div>
+                        <div class="form__item">
+                           <button type="submit" class="form__button">Submit</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container footer__underline">
+            <div class="footer__item">
+               <div class="footer__title">Phone</div>
+               <a href="tel:+19807584546" class="tel">+1 (980)-758-45-46</a>
+            </div>
+            <div class="footer__item">
+               <div class="footer__title">Email</div>
+               <a href="mailto:manilenko.developer@gmail.com" class="email">manilenko.developer@gmail.com</a>
+            </div>
+            <div class="footer__item">
+               <div class="footer__title">Follow me</div>
+               <div class="footer__social social-footer">
+                  <a href="https://github.com/manilenko" class="social-footer__link" target="_blank"><img
+                        src="img/icon-footer/github.svg" alt="github" class="social-footer__img"></a>
+                  <a href="https://www.linkedin.com/in/julia-manilenko-6969b523b/" class="social-footer__link"
+                     target="_blank"><img src="img/icon-footer/linkid.svg" alt="Linkenid"
+                        class="social-footer__img"></a>
+                  <a href="https://twitter.com/JuliaManilenko" class="social-footer__link" target="_blank"><img
+                        src="img/icon-footer/twitter.svg" alt="Twitter" class="social-footer__img"></a>
+                  <a href="https://www.instagram.com/j.m.summer/" class="social-footer__link" target="_blank"><img
+                        src="img/icon-footer/instagram.svg" alt="Instagram" class="social-footer__img"></a>
+               </div>
+            </div>
+            <div class="footer__item">
+               <p>© 2022 By Julia Manilenko.</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="js/script.js"></script>
+   </div>
+</body>
+
+</html>

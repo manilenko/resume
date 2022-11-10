@@ -1,0 +1,151 @@
+.header {
+
+}
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+.header__logo {
+	z-index: 5;
+}
+.logo__link {
+	display: flex;
+	align-items: center;
+   color: #000;
+	gap: 7px;
+}
+.logo__img{
+	img{
+		max-width: 100%;
+		display: block;
+		
+	}
+}
+
+.logo__name {
+   font-size: 24px;
+	@include adaptiv-font(24, 20);
+   font-family: $fontFamily;
+   font-weight: $fontWeight;
+   padding-bottom: 5px;
+	@media (max-width: 320px) {
+		display: none;
+	}
+}
+
+.logo__job {
+   line-height: 1.4em;
+	@media (max-width: 320px) {
+		display: none;
+	}
+}
+.header__burger {
+	display: none;
+}
+.header__menu {}
+.menu {}
+.menu__list {
+	display: flex;
+	position: relative;
+	z-index: 2;
+	gap: 20px;
+	& li:not(:last-child):after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 22px;
+      background: #000;
+      margin: 0 9px;
+   }
+}
+
+.menu__link {
+  line-height: 1.4em;
+  color: #000;
+  position: relative;
+  &:hover{
+   color: rgb(161, 158, 158);
+  }
+  &.link-active{
+	color: rgb(117, 148, 148);
+  }
+}
+@media (max-width: 767.98px){
+	body.lock{
+		overflow: hidden;
+	}
+	.header__burger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+		span{
+			background-color: #000;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			top: 9px;
+		}
+		&:before,
+		&:after{
+			content: '';
+			background-color: #000;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&:before{
+			top: 0;
+		}
+		&:after{
+			bottom: 0;
+		}
+		&.active:before{
+			transform: rotate(45deg);
+			top: 9px;
+		}
+		&.active:after{
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+		&.active span{
+			transform: scale(0);
+		}
+}
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		overflow: auto;
+		transition: all 0.3s ease 0s;
+	}
+	.header__menu.active{
+		top: 0;
+	}
+	.menu__list{
+		display: block;
+		text-align: center;
+		padding: 110px 0 0 0; 
+		font-size: 24px;
+			& li:not(:last-child):after {
+				display: none;
+			}
+	}
+	
+	.menu__item {
+		&:not(:last-child){
+			padding-bottom: 10px;
+		}
+		
+	}
+} 
